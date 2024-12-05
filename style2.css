@@ -1,0 +1,139 @@
+.slider {
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide p {
+    font-size: 150%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 35%;
+}
+
+.navigation-manual {
+    /* position: absolute; */
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manual-btn {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: black;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+.navigation-auto {
+    position: relative;
+}
+
+.navigation-auto div {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1.5s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: black;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: black;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: black;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background: black;
+}
+
+.bande_incline {
+    width: 1100px;
+    height: 145px;
+    background: white;
+    position: relative;
+    bottom: 30px;
+    margin: 0;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.bandes {
+    width: 100%;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+}
+
+#together {
+    background-color: black;
+    color: #00addc;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    transition: background-color 0.8s;
+}
+
+#together:hover {
+    background-color: #00addc;
+    color: black;
+}
+
+#SERVICES h2::first-letter {
+    font-size: 1.8em;
+    color: #00addc;
+    font-family: 'Algerian';
+    color: rgba(255, 116, 92, alpha);
+}
+
+.info_parag{
+    font-size: 1.2em;
+}
